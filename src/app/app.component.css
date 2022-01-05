@@ -1,0 +1,15 @@
+.nav-items{
+    display: flex;
+    list-style-type: none;
+}
+.nav-settings {
+    float: right;
+    display: flex;
+    list-style-type: none;
+    margin-left: 50%;
+    position: fixed;
+} 
+.styling{
+    text-align: center;
+    background-color: cyan;
+}
