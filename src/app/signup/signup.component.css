@@ -1,0 +1,36 @@
+
+.mat-form-field {
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card {
+
+    top: 28%;
+    width: 63%;
+    margin-left: 70%;
+}
+mat-card-content {
+    margin-top:100px;
+      display: flex;
+    justify-content: center;
+  
+}
+
+.button {
+    color:green;
+    text-align: center;
+    
+    
+}
+a{
+    color:hotpink;
+    
+}
+.background {
+    background-color:indianred;
+    background-image:url(https://img.freepik.com/free-vector/bank-building_53562-11632.jpg?size=626&ext=jpg);
+    height: 100%;
+}
+
+

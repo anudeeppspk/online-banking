@@ -1,0 +1,36 @@
+<main class="background">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="login-logo"
+                src="https://cdn.xxl.thumbs.canstockphoto.com/bank-man-money-2-man-geting-into-a-bank-with-money-coins-in-his-hands-stock-illustrations_csp0788357.jpg"
+                alt="bank"
+            >
+        </div>
+        <div class="col-md-6">
+            <mat-card>
+                <!-- <mat-card-title>Login</mat-card-title> -->
+                <mat-card-content>
+                    <form [formGroup]="form" (ngSubmit)="submit()">
+                        <p>
+                            <mat-form-field>
+                                <input type="text" matInput placeholder="Username" formControlName="username">
+                            </mat-form-field>
+                        </p>
+
+                        <p>
+                            <mat-form-field>
+                                <input type="password" matInput placeholder="Password" formControlName="password">
+                            </mat-form-field>
+                        </p>
+
+                        <div class="button">
+                            <button type="submit" mat-button>Login</button>
+                        </div>
+                        <a routerLink="/signup">NEW USER? CLICK ME!!</a>
+
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,33 @@
+
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
+    <div class="logo">AccName</div>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="nav-items">
+                <li>
+                    <a mat-button style="color: orange" routerLink="/balstatement">BalStatement</a>
+                </li>
+                <li>
+                    <a mat-button style="color: orange" routerLink="/history">Transaction history</a>
+                </li>
+                <li>
+                    <a mat-button style="color: orange" routerLink="/fund">Funds Transfer</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav-settings"> 
+                <li >
+                   <a mat-button style="color: orange" mat-button routerLink="/settings">Settings</a>
+               </li>
+                <li>
+                    <a mat-button style="color: orange" (onClick)="logOut()">Logout</a>
+               </li>
+           </ul>
+        </div>
+    </div>
+</mat-toolbar>  
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
